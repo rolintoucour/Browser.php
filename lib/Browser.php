@@ -581,7 +581,7 @@ class Browser
     protected function checkBrowserInternetExplorer()
     {
 	//  Test for IE11
-	if( stripos($this->_agent,'Trident/7.0; rv:11.0') !== false ) {
+	if( stripos($this->_agent,'Trident/7.0;') !== false ) {
 		$this->setBrowser(self::BROWSER_IE);
 		$this->setVersion('11.0');
 		return true;
